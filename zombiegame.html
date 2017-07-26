@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Disappearing Zombies</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("img").click(function(){$(this).fadeOut(1000);});
+        $("img").click(function(){ $("#scream").play(); });
+        $("img").click(function(){console.log("You clicked.");});
+        $("#reset").click(function(){$("img").show();});
+      });
+    </script>
+  </head>
+  <body>
+      <h1>KILL THE ZOMBIES</h1>
+      <div id="container">
+      <div>
+        <img src="zombie8.png">
+        <img src="zombie8.png">
+        <img src="zombie8.png">
+        <img src="zombie8.png">
+      </div>
+      <div>
+        <img src="zombie8.png">
+        <img src="zombie8.png">
+        <img src="zombie8.png">
+        <img src="zombie8.png">
+      </div>
+    </div>
+    <br><br>
+    <div id="reset"><h2>RESET</h2></div><br><br><br>
+    <div id="audiomessage">
+        <audio controls id="scream">
+        <source src="scream.wav" type="audio/wav">
+        </audio>
+        <audio id="music" controls autoplay loop>
+          <source src="flywithyou.mp3" type="audio/mp3">
+        </audio>
+        <br><br>
+        <span id="winner">YOU A BOSS ASS BITCH!!!</span>
+      </div>
+  </body>
+</html>

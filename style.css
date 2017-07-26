@@ -1,0 +1,74 @@
+
+img {
+  height: 200px;
+  margin: 10px;
+}
+
+body {
+  background-color: #777;
+  font-family: Arial, sans-serif;
+  background:url("stars.gif");
+}
+
+div {
+  display: flex;
+}
+
+h1 {
+  text-align: center;
+  color: red;
+  display: inline;
+  margin-left: 500px;
+}
+
+#music{
+  position:absolute;
+  left: 0px;
+}
+
+#audiomessage {
+  position: relative;
+}
+
+#winner {
+  display: block;
+  position: absolute;
+  top: 500px;
+  font-size: 50px;
+  font-weight: bold;
+  left: 350px;
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+#scream {
+  visibility: hidden;
+}
+
+#container {
+  display: block;
+  margin-left: 300px;
+  width: 250px;
+  cursor:url("knife.cur");
+}
+
+
+h2 {
+  color: black;
+  margin: 0px auto;
+}
+
+#reset {
+  margin-left: 550px;
+  width: 200px;
+  border-radius: 10px;
+  height: 50px;
+  background-color: #999;
+}
+
+audio {
+  margin-left: 500px;
+}
