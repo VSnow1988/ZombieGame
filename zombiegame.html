@@ -9,10 +9,15 @@
       $(document).ready(function(){
         $("img").click(function(){$(this).fadeOut(1000);});
 		
-        $("img").click(function(){
-			var $scream = $("#scream");
-			$scream.trigger('play');
-		});
+        $("#1").click(function(){$("#scream1").trigger('play');});
+		$("#2").click(function(){$("#scream2").trigger('play');});
+		$("#3").click(function(){$("#scream3").trigger('play');});
+		$("#4").click(function(){$("#scream4").trigger('play');});
+		$("#5").click(function(){$("#scream5").trigger('play');});
+		$("#6").click(function(){$("#scream6").trigger('play');});
+		$("#7").click(function(){$("#scream7").trigger('play');});
+		$("#8").click(function(){$("#scream8").trigger('play');});
+		
         $("img").click(function(){console.log("You clicked.");});
         $("#reset").click(function(){$("img").show();});
 		
@@ -23,22 +28,22 @@
       <h1>KILL THE ZOMBIES</h1>
       <div id="container">
       <div>
-        <img src="zombie8.png">
-        <img src="zombie8.png">
-        <img src="zombie8.png">
-        <img src="zombie8.png">
+        <img id="1" src="zombie8.png">
+        <img id="2" src="zombie8.png">
+        <img id="3" src="zombie8.png">
+        <img id="4" src="zombie8.png">
       </div>
       <div>
-        <img src="zombie8.png">
-        <img src="zombie8.png">
-        <img src="zombie8.png">
-        <img src="zombie8.png">
+        <img id="5" src="zombie8.png">
+        <img id="6" src="zombie8.png">
+        <img id="7" src="zombie8.png">
+        <img id="8" src="zombie8.png">
       </div>
     </div>
     <br><br>
     <div id="reset"><h2>RESET</h2></div><br><br><br>
     <div id="audiomessage">
-        <audio controls id="scream">
+        <audio controls class="sfx" id="scream1">
         <source src="scream.wav" type="audio/wav">
         </audio>
         <audio id="music" controls autoplay loop>
@@ -47,5 +52,19 @@
         <br><br>
         <span id="winner">YOU A BOSS ASS BITCH!!!</span>
       </div>
+	  <audio controls class="sfx" id="scream2">
+        <source src="scream.wav" type="audio/wav">
+	  <audio controls class="sfx" id="scream3">
+        <source src="scream.wav" type="audio/wav">
+	  <audio controls class="sfx" id="scream4">
+        <source src="scream.wav" type="audio/wav">
+	  <audio controls class="sfx" id="scream5">
+        <source src="scream.wav" type="audio/wav">
+	  <audio controls class="sfx" id="scream6">
+        <source src="scream.wav" type="audio/wav">
+	  <audio controls class="sfx" id="scream7">
+        <source src="scream.wav" type="audio/wav">
+	  <audio controls class="sfx" id="scream8">
+        <source src="scream.wav" type="audio/wav">
   </body>
 </html>

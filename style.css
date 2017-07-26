@@ -44,7 +44,7 @@ h1 {
   background-clip: text;
 }
 
-#scream {
+.sfx {
   visibility: hidden;
 }
 
@@ -52,7 +52,7 @@ h1 {
   display: block;
   margin-left: 300px;
   width: 250px;
-  cursor:url("knife.cur");
+  cursor:url("knife.cur"), auto;
 }
 
 
