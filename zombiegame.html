@@ -8,9 +8,14 @@
     <script>
       $(document).ready(function(){
         $("img").click(function(){$(this).fadeOut(1000);});
-        $("img").click(function(){ $("#scream").play(); });
+		
+        $("img").click(function(){
+			var $scream = $("#scream");
+			$scream.trigger('play');
+		});
         $("img").click(function(){console.log("You clicked.");});
         $("#reset").click(function(){$("img").show();});
+		
       });
     </script>
   </head>
